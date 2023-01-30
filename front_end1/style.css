@@ -1,0 +1,358 @@
+/* .header merupakan nama kelas */
+/* #header digunakan memanggil id */
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+/* berfungsi untuk mengambil font dari gogle */
+/* tulis aja misal poppin fonts, kemudian ambil yang import link nya */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins","sans-serif";
+/* kalau di browser orang lain tidak ada poppin,maka pindah ke sans serif */
+ 
+    font-size: 16px;
+    /* ukuran standar font size adalah 16px */
+}
+
+.header
+{
+    
+    padding: 10px;
+    
+
+}
+
+.header .nav
+{
+    width: 80%;
+
+    margin: auto;
+   
+    display: flex;
+    /* agar antara logo dan link bersebelahan */
+    
+    justify-content: space-between;
+    /* space between maka akan mencar */
+
+    align-items: center;
+    /* agar item di dalam letak nya di tengah */
+
+}
+.header .nav .logo
+{
+    height: 40px;
+  
+
+}
+.link
+{
+    display: flex;
+    width: 40%;
+    /* artinya 40% dari parrent nya yaitu nav */
+
+    justify-content: space-between; /*memberi jarak secara otomatis*/
+   
+}
+
+.link a
+{
+    text-decoration: none;
+   
+}
+
+.buttons
+{
+    background-color: #6342e4;
+
+    
+    padding: 8px 16px;
+    /* atasbawah, kiri kanan */
+    color: white;
+
+}
+
+.buttons:hover
+{
+    background-color: aqua;
+}
+
+.main
+{
+    width: 80%;
+    margin: auto;
+}
+
+.main .hero
+{
+    height: 400px;
+    display: flex;
+    background-image: url('/Assets/background.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    
+    /* overflow: hidden; */
+}
+
+.main .hero img
+{
+    width: 400px;
+}
+
+.main .hero .kiri
+{
+    
+    display: flex;
+    flex-direction: column;
+    /* agar flex nya atas bawah */
+    margin-top: 20px;
+    width: 50%;
+}
+
+.main .hero .kiri h1
+{
+    
+    font-size: 50px;
+    margin-bottom: 20px;
+    
+}
+
+.main .hero .kiri span
+{
+    
+    font-size: 50px;
+    color: #6342e4;
+    
+}
+
+.main .hero .kiri p
+{
+    margin-bottom: 40px;
+
+}
+
+.main .hero .kanan
+{
+    background-image: url("Assets/coretan.png");
+    background-repeat: no-repeat;
+    width: 50%;
+    display: flex ;
+    justify-content: center;
+    
+}
+
+.main .hero img
+{
+    width: 400px;
+
+}
+
+.main .hero .bungkusan-tombol
+{
+
+
+    display: flex;
+
+}
+
+.bungkusan-tombol .tombol-kiri
+{
+    background-color: #6342e4;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.bungkusan-tombol .tombol-kanan
+{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    color: #6342e4;
+    border:solid 1px #6342e4;
+
+
+}
+
+.keterangan .tentang
+{
+  background-color: black;
+
+   
+}
+
+.keterangan .tentang .judul
+{
+   padding-top: 4%;
+   text-align: center;
+   color: #fff;
+   font-size: 50px;
+}
+
+.keterangan .tentang .artikel
+{
+
+   padding-top: 2%;
+   padding-left: 20%;
+   padding-right: 20%;
+   padding-bottom: 4%;
+   font-size: 50px;
+   text-align: center;
+
+    color: #fff;
+}
+
+.keterangan .skill
+{
+
+}
+
+.keterangan .skill .judul-skill
+{
+    padding-top: 4%;
+   text-align: center;
+   color: black;
+   font-size: 50px;
+}
+
+.keterangan .skill .gambar-skill
+{
+    display: flex;
+    padding-top: 4%;
+    padding-left: 14%;
+  
+    padding-bottom: 4%;
+
+}
+
+
+            /* air */
+
+.keterangan .skill .gambar-skill .air
+{
+    padding-right: 1.5%;
+}
+
+
+
+.keterangan .skill .gambar-skill .air .gambar-air img
+{
+   box-shadow: 10px 10px 0px 0px black ;
+   
+   
+}
+
+.keterangan .skill .gambar-skill .air .keterangan-air
+{
+    margin-top: 8%;
+    text-align: center;
+}
+            /* tanah */
+
+.keterangan .skill .gambar-skill .tanah
+{
+    padding-right: 1.5%;
+}
+
+.keterangan .skill .gambar-skill .tanah .gambar-tanah img
+{
+    box-shadow: 10px 10px 0px 0px black;
+}
+
+.keterangan .skill .gambar-skill .tanah .keterangan-tanah
+{
+    margin-top: 8%;
+    text-align: center;
+}
+
+            /* api */
+
+.keterangan .skill .gambar-skill .api
+{
+    padding-right: 1.5%;
+}
+
+.keterangan .skill .gambar-skill .api .gambar-api img
+{
+    box-shadow: 10px 10px 0px 0px black;
+}
+
+.keterangan .skill .gambar-skill .api .keterangan-api
+{
+    margin-top: 8%;
+    text-align: center;
+}
+
+        /* udara */
+
+.keterangan .skill .gambar-skill .udara
+{
+    
+}
+
+.keterangan .skill .gambar-skill .udara .gambar-udara img
+{
+    box-shadow: 10px 10px 0px 0px black;
+}
+
+.keterangan .skill .gambar-skill .udara .keterangan-udara
+{
+    margin-top: 8%;
+    text-align: center;
+}
+
+
+.keterangan .question .judul-question
+{
+    padding-top: 4%;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+}
+/* label teks */
+.keterangan .question .input-text
+{
+    padding: 4% 20% 0% 20%;
+    /* atas kanan  bawah kiri*/
+}
+
+.keterangan .question .input-text .masukan
+{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    font-size: 16px;
+    background-color: #fff;
+    padding: 12px 20px 12px 40px;
+
+}
+
+.keterangan .question .button .kirim
+{
+    background-color: #6342e4;
+    border: none;
+    color: #fff;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 2% 47% 4% 48%;
+    cursor: pointer;
+
+}
+
+.page-bawah
+{
+    background-color: rgb(255, 208, 0);
+    text-align: center;
+    padding: 1%;
+
+}
+
+
+
+
+
+
+
