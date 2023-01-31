@@ -91,7 +91,11 @@
     background-image: url('/Assets/background.png');
     /* background-position-x:100px ;
     background-position-y:-300px ; */
+<<<<<<< HEAD
     /* background-size: 1000px; */
+=======
+    /* background-size: 1000px; */
+>>>>>>> bf2d9668dbc1ef90632eac20b40cee1a3f21d315
     background-repeat: no-repeat;
     background-position: left;
     
