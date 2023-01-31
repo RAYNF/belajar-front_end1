@@ -86,9 +86,12 @@
 
 .main .hero
 {
-    height: 400px;
+    /* height: 400px; */
     display: flex;
     background-image: url('/Assets/background.png');
+    /* background-position-x:100px ;
+    background-position-y:-300px ; */
+    background-size: 1000px;
     background-repeat: no-repeat;
     background-position: left;
     
@@ -136,6 +139,9 @@
 {
     background-image: url("Assets/coretan.png");
     background-repeat: no-repeat;
+    background-position-y: -50px; 
+    background-position-x: 64px ;
+    background-size: 500px;
     width: 50%;
     display: flex ;
     justify-content: center;
