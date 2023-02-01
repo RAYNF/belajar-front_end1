@@ -14,4 +14,6 @@ Progammer malas
 **pelatihan dilakukan<br>
 selama 3 kali**
 
-![Tux, the linux mascot] (/REFERENSI_WEBSITE.JPG)
+**Design frontend**
+
+![design](front_end1/REFERENSI_WEBSITE.jpg)
