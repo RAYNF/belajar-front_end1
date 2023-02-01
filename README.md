@@ -13,3 +13,5 @@ Progammer malas
 
 **pelatihan dilakukan<br>
 selama 3 kali**
+
+![Tux, the linux mascot] (/REFERENSI_WEBSITE.JPG)
