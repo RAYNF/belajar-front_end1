@@ -5,11 +5,11 @@ Progammer malas
 
 *materi yang dipelajari*
 
--dasar html
+- dasar html
 
--dasar css
+- dasar css
 
--tugas akhir
+- tugas akhir
 
 **pelatihan dilakukan<br>
 selama 3 kali**
