@@ -38,11 +38,13 @@
 
     align-items: center;
     /* agar item di dalam letak nya di tengah */
+    
 
 }
 .header .nav .logo
 {
     height: 40px;
+    
   
 
 }
