@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+  font-size: 1.01em;
+}
+
+header {
+  display: inline;
+}
+.header .nav {
+  width: 86%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav .logo {
+  height: 4.5em;
+}
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #fbf8f8;
+}
+.link,
+.hilang {
+  display: flex;
+  /* width: 20%; */
+  gap: 1em; /*memberi jarak secara otomatis*/
+}
+.link a,
+li {
+  text-decoration: none;
+  color: black;
+  padding-top: 10px;
+}
+
+.link li {
+  visibility: hidden;
+}
+/* .buttons
+{
+    background-color: #D1CBCB; 
+    padding: 4px 4px;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+
+}
+.buttons:hover
+{
+    background-color: rgb(214, 214, 214);
+} */
+
+.main {
+  width: 88%;
+  margin: auto;
+}
+
+.main .hero {
+  height: 450%;
+  display: flex;
+  background-image: url("/web/Assets/background.png");
+  background-repeat: no-repeat;
+
+  /* overflow: hidden; */
+}
+
+.main .hero .kiri {
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  /* agar flex nya atas bawah */
+  margin-top: 8%;
+  width: 50%;
+}
+.main .hero .kiri h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #72a700;
+}
+.main .hero .kiri span.Dans {
+  font-size: 1em;
+  color: #d9dd05;
+}
+.main .hero .kiri span.store {
+  font-size: 1em;
+  color: #8ed100;
+}
+.main .hero .kiri p {
+  margin-bottom: 10%;
+  color: #a08d8d;
+  font-size: 120%;
+}
+.main .hero .kanan {
+  background-image: url("/web/Assets/biru.png");
+  background-size: 25%;
+  background-position: 52%;
+  background-position-y: 60%;
+  background-repeat: no-repeat;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.main .hero img {
+  margin-left: 32%;
+  width: 70%;
+  height: 110%;
+}
+.main .hero .bungkusan-tombol {
+  display: flex;
+}
+.bungkusan-tombol .tombol-kiri {
+  background-color: #d1fead;
+  text-decoration: none;
+  color: #050505;
+
+  padding: 2%;
+  border-radius: 30%;
+}
+
+.keterangan .tentang {
+  margin-top: 7%;
+  background-color: #cccccc;
+}
+/* .keterangan .tentang .judul {
+  padding-top: 4%;
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+} */
+.keterangan .tentang .artikel {
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 20%;
+  display: flex;
+  padding-bottom: 4%;
+  font-size: 1em;
+  color: #fff;
+}
+.keterangan .tentang .artikel .kiri-artikel {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  width: 50%;
+}
+.keterangan .tentang .artikel .kanan-artikel {
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.keterangan .tentang .artikel .kanan-artikel h2 {
+  margin-top: 10%;
+}
+.keterangan .tentang .artikel .kanan-artikel h2 .About {
+  color: #a0bc7c;
+  font-size: 3em;
+}
+.keterangan .tentang .artikel .kanan-artikel h2 .We {
+  color: #d9dd05;
+  font-size: 3em;
+}
+
+.keterangan .tentang .artikel .kanan-artikel .about p {
+  color: #848983;
+  font-size: 1.2em;
+}
+.bungkusan-tombol-about {
+  margin-top: 10%;
+}
+.bungkusan-tombol-about .tombol-kiri {
+  background-color: #d1fead;
+  text-decoration: none;
+  color: #050505;
+  margin-top: 10%;
+  padding: 5%;
+  border-radius: 30%;
+}
+
+.produk {
+  padding-top: 4%;
+  background-image: url("/web/Assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.produk .judul-skill {
+  text-align: center;
+}
+.produk .judul-skill .Our {
+  color: #a0bc7c;
+  font-size: 3em;
+}
+.produk .judul-skill .Product {
+  margin-left: 0.5%;
+  color: #d9dd05;
+  font-size: 3em;
+}
+
+.produk .gambar-skill {
+  display: flex;
+  padding-top: 4%;
+  padding-left: 14%;
+  justify-content: center;
+  flex-direction: row;
+  padding-bottom: 4%;
+}
+
+.produk .gambar-skill .air {
+  padding-right: 1.5%;
+}
+.produk .gambar-skill .air .gambar-air img {
+  box-shadow: 10px 10px 0px 0px black;
+  width: 80%;
+}
+.produk .gambar-skill .tanah {
+  padding-right: 1.5%;
+}
+.produk .gambar-skill .tanah .gambar-tanah img {
+  box-shadow: 10px 10px 0px 0px black;
+  width: 56%;
+}
+footer {
+  background-color: #6e6d6d;
+  color: #ffffff;
+  text-align: center;
+  padding: 1%;
+  font-size: 0.9em;
+}
+
+/* li{
+  list-style: none;
+  display: block;
+ 
+} */
+ul {
+  display: none;
+}
+/* li:hover ul{
+  display: block;
+} */
+/* ul li:hover{
+  background-color: #6e6d6d;
+} */
+
+.profile-img {
+  width: 200px;
+}
+.profil {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+}
+.profil header {
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header nav {
+    width: 70%;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+  main aside {
+    align-self: stretch;
+  }
+
+  .main .hero .kanan {
+    opacity: 0;
+  }
+  /* .link{
+  gap: 0;
+} */
+  .hilang {
+    visibility: hidden;
+    gap: 0;
+  }
+
+  .link li,ul a {
+    visibility: visible;
+    display: block;
+  }
+
+  li {
+    list-style: none;
+  }
+  ul {
+    display: none;
+  }
+  li:hover ul {
+    display: block;
+    /* position: absolute */
+  }
+  ul li:hover {
+    background-color: #6e6d6d;
+  }
+  /* li ul {
+    display: none;
+  } */
+}

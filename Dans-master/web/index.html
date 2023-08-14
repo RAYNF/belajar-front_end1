@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dans Bisnis</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        //event pada saat link di klik
+        $(document).ready(function () {
+          $(".page-scroll").click(function (e) {
+            //ambil isi href
+            var tujuan = $(this).attr("href");
+            //jquery tolong ambilkan atribut href yang saya pilih
+  
+            //tangkap element bersangkutan
+            var elemenTujuan = $(tujuan); //ambil 1 element full div nya
+  
+            // console.info(elemenTujuan.offset().top); //.offset().top artinya jarak element ini dengan atas berapa
+  
+            //scrollTop berfungsi untuk mengetahui jarak anatar sebuah element dengan atas ketika halaman scroll maka akan berubah
+  
+            //pindahkan scroll top
+            // $('body').scrollTop(elemenTujuan.offset().top); // sama seperti href biasa cuman ini pake versi jquery
+  
+            $("html").animate(
+              {
+                scrollTop: elemenTujuan.offset().top,
+              },
+              1250,
+              "swing"
+            ); //jquey ada gaya scroll swing(default ayunan) atau linear
+            e.preventDefault();
+          });
+        });
+      </script>
+</head>
+<body>
+    <header class="header"><!--header-->
+        <nav class="nav"> <!--di dalam header ada nav-->
+            <img src="/web/Assets/dans.png" alt="" class="logo">
+            <div class="link"><!--agar mudah navigasi nya diberi wadah fungsi dari div-->
+                <div class="hilang">
+                    <a href="#home"class="page-scroll">Home</a> <!--sortcut aga cepat tinggal a*3-->
+                    <a href="#about"class="page-scroll">About</a>
+                    <a href="#product"class="page-scroll">Product</a>
+                    <a href="#contact" class="page-scroll">Contact</a>
+                </div>
+              
+                <li>||
+                    <ul>
+                        <a href="#home"><li>Home</li></a>
+                        <a href="#about"><li>About</li></a>
+                        <a href="#product"><li>Product</li></a>
+                        <a href="#contact"><li>Contact</li></a>
+                    </ul>
+               
+                
+                
+            </div>
+            
+        </nav>
+    </header>
+
+    <main class="main" id="home">
+
+        <article class="hero">
+            <div class="kiri">
+                <h1>Welcome<br><span class="Dans">Dan's</span> <span class="store">store</span></h1>
+                <p>Dan’s adalah sebuah divisi pada ukm Bai Universitas Dian nuswantoro Semarang yang berfokus pada pencarian dana usaha ukm BAI Udinus
+                </p>
+                    <div class="bungkusan-tombol">
+                            <a href="" class="tombol-kiri">Eksplore</a>
+                    </div>
+            </div>
+            
+
+            <div class="kanan">
+                <img src="/web/Assets/dans_utama.png">
+            </div>
+        </article>
+
+
+        <article class="keterangan">
+            <div class="tentang">
+    
+                <div class="artikel" id="about">
+                    <div class="kiri-artikel">
+                        <img src="/web/Assets/about.png" alt="">
+                    </div>
+                    <div class="kanan-artikel">
+                        <h2><span class="About">About</span> <span class="We">We</span></h2>
+                        <div class="about">
+                            <p>
+                                Dan’s bisnis adalah sebuah divisi pada unit kegiatan mahasiswa badan amalan islam atau bisa disebut juga dengan BA’I Universitas Dian Nuswantoro semarang yang berfokus pada bidang usaha untuk mengumpulkan dana guna digunakan dalam aktvitas BA’I. Usaha yang kami jalankan diantaranya yaitu Open pre order makanan, jualan aqua pada acara besar,jualan resole mayo,reseler, dan masih banyak lagi.
+                            </p>
+
+                            <div class="bungkusan-tombol-about">
+                                <a href="" class="tombol-kiri">More</a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </article>
+            
+        <article class="produk">
+            <div class="judul-skill" id="product">
+                <h1><span class="Our">Our</span> <span class="Product">Product</span></h1>
+            </div>
+
+            <div class="gambar-skill">
+                    <div class="air">
+                        <div class="gambar-air">
+                            <img src="/web/Assets/iklan.jpg" alt="">
+                        </div>
+                        
+                    </div>
+
+                    <div class="tanah">
+                        <div class="gambar-tanah">
+                            <img src="/web/Assets/iklan2.jpg" alt="">
+                        </div>
+                    </div>
+        </article>
+
+        <aside>
+            <article class="profil" id="contact">
+              <header>
+                <h2>Biodata</h2>
+                <p>creator website Dan's</p>
+                <figure>
+                  <img src="/web/Assets/foto.png" class="profile-img" />
+                </figure>
+              </header>
+              <section>
+                <table>
+                  <tr>
+                    <th>Nama</th>
+                    <td>Rayhan Noor F</td>
+                  </tr>
+                  <tr>
+                    <th>Alamat</th>
+                    <td>Jln.Bukit Panjangan Asri</td>
+                  </tr>
+                  <tr>
+                    <th>Email</th>
+                    <td>111202113419@mhs.dinus.ac.id</td>
+                  </tr>
+                  <tr>
+                    <th>Telepon</th>
+                    <td>+628679109718</td>
+                  </tr>
+                </table>
+              </section>
+            </article>
+          </aside>
+
+    </main>
+
+    <footer>
+        <p>Copyright@DansBisnis</p>
+        
+    </footer>
+   
+</body>
+</html>
